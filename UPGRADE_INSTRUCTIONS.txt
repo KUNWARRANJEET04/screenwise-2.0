@@ -1,0 +1,12 @@
+SCREENWISE 2.1 UPGRADE
+
+1. Keep your existing .env file. This archive intentionally does not contain .env or Azure credentials.
+2. Back up your current app.py and src/ directory if you want to retain a copy.
+3. From the existing screenwise-2.0 project directory, extract this archive into the project root and allow files to be replaced.
+4. Activate your existing environment and run:
+   source .screen/bin/activate
+   python -m pip install -e ".[dev]"
+   python -m pytest -v
+   python -m streamlit run app.py
+
+The archive excludes virtual environments, Git internals, caches, personal screenshots, generated OCR files, and .env.

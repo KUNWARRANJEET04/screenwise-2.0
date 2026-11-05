@@ -1,0 +1,23 @@
+
+# Virtual environments
+.screen/
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Data and uploaded screenshots
+data/uploads/*
+data/processed/*
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+
+# OS and editor
+.DS_Store
+.vscode/

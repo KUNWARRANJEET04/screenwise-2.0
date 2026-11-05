@@ -1,0 +1,8 @@
+pydantic-settings<3.0,>=2.0
+Pillow>=10.0
+azure-ai-vision-imageanalysis>=1.0.0
+streamlit>=1.36
+pandas>=2.0
+
+[dev]
+pytest>=8.0

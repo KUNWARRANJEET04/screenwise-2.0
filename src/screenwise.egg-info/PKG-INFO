@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: screenwise
+Version: 2.0.0
+Summary: iPhone Screen Time Intelligence Platform
+Requires-Python: >=3.11
+Requires-Dist: pydantic-settings<3.0,>=2.0
+Requires-Dist: Pillow>=10.0
+Requires-Dist: azure-ai-vision-imageanalysis>=1.0.0
+Requires-Dist: streamlit>=1.36
+Requires-Dist: pandas>=2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
