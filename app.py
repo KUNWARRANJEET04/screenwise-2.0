@@ -13,6 +13,21 @@ import pandas as pd
 import streamlit as st
 from PIL import Image, UnidentifiedImageError
 
+import os
+import streamlit as st
+
+if "AZURE_VISION_ENDPOINT" in st.secrets:
+    os.environ["AZURE_VISION_ENDPOINT"] = st.secrets[
+        "AZURE_VISION_ENDPOINT"
+    ]
+
+if "AZURE_VISION_KEY" in st.secrets:
+    os.environ["AZURE_VISION_KEY"] = st.secrets[
+        "AZURE_VISION_KEY"
+    ]
+
+from screenwise.config import settings
+
 from screenwise.config import settings
 from screenwise.extraction.pipeline import process_screenshot
 from screenwise.extraction.screen_time_parser import parse_screen_time_text
